@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{url(mix('backend/assets/css/style.css'))}}"/>
     <link rel="icon" type="image/png" href="{{url(mix('backend/assets/images/favicon.png'))}}"/>
 
-{{--    <meta name="csrf-token" content="{{csrf_token()}}">--}}
+    {{--    <meta name="csrf-token" content="{{csrf_token()}}">--}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>UpAdmin - Site Control</title>
@@ -29,7 +29,8 @@
 <div class="dash">
     <aside class="dash_sidebar">
         <article class="dash_sidebar_user">
-            <img class="dash_sidebar_user_thumb" src="{{url(asset('backend/assets/images/avatar.jpg'))}}" alt="" title=""/>
+            <img class="dash_sidebar_user_thumb" src="{{url(asset('backend/assets/images/avatar.jpg'))}}" alt=""
+                 title=""/>
 
             <h1 class="dash_sidebar_user_name">
                 <a href="">Gustavo Web</a>
@@ -63,17 +64,17 @@
             <li class="dash_sidebar_nav_item"><a class="icon-reply" href="">Ver Site</a></li>
             <li class="dash_sidebar_nav_item"><a class="icon-sign-out on_mobile" href="" target="_blank">Sair</a></li>
         </ul>
-
     </aside>
 
     <section class="dash_content">
-
         <div class="dash_userbar">
             <div class="dash_userbar_box">
                 <div class="dash_userbar_box_content">
                     <span class="icon-align-justify icon-notext mobile_menu transition btn btn-green"></span>
                     <h1 class="transition">
-                        <i class="icon-imob text-orange"></i><a href="">Up<b>Admin</b></a>
+
+                        <i class="text-orange"></i><a href=""> <img
+                                src="{{url(asset('backend/assets/images/ign.svg'))}}" alt="" title=""/><b>Dashboard</b></a>
                     </h1>
                     <div class="dash_userbar_box_bar no_mobile">
                         <a class="text-red icon-sign-out" href="">Sair</a>
@@ -83,7 +84,7 @@
         </div>
 
         <div class="dash_content_box">
-           @yield('content')
+            @yield('content')
         </div>
     </section>
 </div>
