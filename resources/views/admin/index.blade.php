@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{url(mix('backend/assets/css/boot.css'))}}"/>
     <link rel="stylesheet" href="{{url(mix('backend/assets/css/login.css'))}}"/>
     <link rel="icon" type="image/png" href="{{url(mix('backend/assets/images/favicon.png'))}}"/>
-    <title>UpAdmin - Site Control</title>
+    <title>Allan - WebDev</title>
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -21,7 +21,9 @@
     <div class="dash_login_left">
         <article class="dash_login_left_box">
             <header class="dash_login_box_headline">
-                <div class="dash_login_box_headline_logo icon-imob icon-notext"></div>
+                <div class="dash_login_box_headline_logo icon-notext">
+                    <img src="{{url(asset('backend/assets/images/ign.svg'))}}" alt="">
+                </div>
                 <h1>Login</h1>
             </header>
 
@@ -36,18 +38,12 @@
                     <input type="password" name="password" placeholder="Informe sua senha"/>
                 </label>
 
-                <button class="gradient gradient-orange radius icon-sign-in">Entrar</button>
+                <button class="gradient gradient-green radius icon-sign-in">Entrar</button>
             </form>
 
             <footer>
-                <p>Desenvolvido por <a href="https://www.upinside.com.br">www.<b>upinside</b>.com.br</a></p>
+                <p>Desenvolvido por <a href="#"><b>Allan</b>.</a>R</p>
                 <p>&copy; <?= date("Y"); ?> - Todos os Direitos Reservados</p>
-                <p class="dash_login_left_box_support">
-                    <a target="_blank"
-                       class="icon-whatsapp transition text-green"
-                       href="https://api.whatsapp.com/send?phone=DDI+DDD+TELEFONE&text=Olá, preciso de ajuda com o login."
-                    >Precisa de Suporte?</a>
-                </p>
             </footer>
         </article>
     </div>
