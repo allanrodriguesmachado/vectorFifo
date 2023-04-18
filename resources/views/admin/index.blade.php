@@ -22,7 +22,7 @@
         <article class="dash_login_left_box">
             <header class="dash_login_box_headline">
                 <div class="dash_login_box_headline_logo icon-notext">
-                    <img src="{{url(asset('backend/assets/images/ign.svg'))}}" alt="">
+                    <img src="{{url(asset('backend/assets/images/icon.svg'))}}" alt="">
                 </div>
                 <h1>Login</h1>
             </header>
@@ -30,7 +30,7 @@
             <form name="login" action="{{route('admin.login.do')}}" method="POST" autocomplete="off">
                 <label>
                     <span class="field icon-envelope">E-mail:</span>
-                    <input type="email" name="email" placeholder="Informe seu e-mail" />
+                    <input type="email" name="email" placeholder="Informe seu e-mail"/>
                 </label>
 
                 <label>
@@ -42,14 +42,14 @@
             </form>
 
             <footer>
-                <p>Desenvolvido por <a href="#"><b>Allan</b>.</a>R</p>
-                <p>&copy; <?= date("Y"); ?> - Todos os Direitos Reservados</p>
+                {{--                <p>Desenvolvido por <a href="#"><b>Allan</b>.</a>R</p>--}}
+                <p class="text-bold">Desenvolvido por <a href="#">Allan<b class="text-green">.</b></a>R</p>
+                <p class="text-bold">&copy; <?= date("Y"); ?> - Todos os Direitos Reservados</p>
             </footer>
         </article>
     </div>
 
     <div class="dash_login_right"></div>
-
 </div>
 
 <script src="{{url(mix('backend/assets/js/jquery.js'))}}"></script>

@@ -73,26 +73,26 @@ html, body {
 .dash_sidebar .dash_sidebar_nav_item a:hover {
   background: #59606b;
   color: #ffffff;
-  border-left: 3px solid #F4645F;
+  border-left: 3px solid #36BA9B;
 }
 .dash_sidebar .dash_sidebar_nav_item.active > a {
-  border-left: 3px solid #F4645F;
+  border-left: 3px solid #36BA9B;
   color: #FFF;
 }
 .dash_sidebar .dash_sidebar_nav_item.active a {
-  border-left: 3px solid #F4645F;
+  border-left: 3px solid #36BA9B;
 }
 .dash_sidebar .dash_sidebar_nav_item.active a + .dash_sidebar_nav_submenu {
   display: block;
   border-left: none;
 }
 .dash_sidebar .dash_sidebar_nav_item.active a + .dash_sidebar_nav_submenu li.active a {
-  border-left: 3px solid #F4645F !important;
+  border-left: 3px solid #36BA9B !important;
   background: #59606b !important;
   color: #FFF;
 }
 .dash_sidebar .dash_sidebar_nav_item .dash_sidebar_nav_submenu {
-  border-left: 3px solid #F4645F;
+  border-left: 3px solid #36BA9B;
   display: none;
 }
 .dash_sidebar .dash_sidebar_nav_item .dash_sidebar_nav_submenu a {
@@ -101,7 +101,7 @@ html, body {
 .dash_sidebar .dash_sidebar_nav_item .dash_sidebar_nav_submenu a:hover {
   background: #59606b;
   color: #ffffff;
-  border-left: 6px solid #F4645F;
+  border-left: 6px solid #36BA9B;
 }
 .dash_sidebar .dash_sidebar_nav_item:not(.active):hover .dash_sidebar_nav_submenu {
   display: block;
