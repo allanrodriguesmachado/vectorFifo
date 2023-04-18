@@ -3,21 +3,28 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use Database\Factories\AuthFactory;
+use Database\Factories\UserFactory;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+    public function files()
+    {
+//        if (Auth::check() === true) {
+//            return redirect()->route('admin.users.create');
+//        }
+        return view('admin.users.create');
+    }
+
     public function showLoginForm()
     {
-//        $user = User::where('id', 1)->first();
-//        $user->password = bcrypt('teste');
-//        $user->save();
         if (Auth::check() === true) {
             return redirect()->route('admin.home');
         }
-        return view('admin.index') ?? [];
+        return view('admin.index');
     }
 
     public function home()
@@ -33,7 +40,7 @@ class AuthController extends Controller
         }
 
         if (!filter_var($request->email, FILTER_SANITIZE_EMAIL)) {
-            $json['message'] = $this->message->error("Opsss, E-mail invalido")->render();
+            $json['message'] = $this->message->error("Atenç")->render();
             return response()->json($json);
         }
 

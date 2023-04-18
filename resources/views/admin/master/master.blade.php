@@ -13,7 +13,6 @@
         @yield('css')
     @endif
 
-
     <link rel="icon" type="image/png" href="{{url(mix('backend/assets/images/favicon.png'))}}"/>
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -63,7 +62,7 @@
             <li class="dash_sidebar_nav_item"><a class="icon-file-text" href="dashboard.php?app=contracts/index">Contratos</a>
                 <ul class="dash_sidebar_nav_submenu">
                     <li class=""><a href="dashboard.php?app=contracts/index">Ver Todos</a></li>
-                    <li class=""><a href="dashboard.php?app=contracts/create">Criar Novo</a></li>
+                    <li class=""><a href="{{route('admin.files')}}">Criar Novo</a></li>
                 </ul>
             </li>
             <li class="dash_sidebar_nav_item"><a class="icon-reply" href="">Ver Site</a></li>
