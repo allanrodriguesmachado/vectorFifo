@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-//use App\Models\User;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +17,7 @@ class AuthController extends Controller
         if (Auth::check() === true) {
             return redirect()->route('admin.home');
         }
-        return view('admin.index');
+        return view('admin.index') ?? [];
     }
 
     public function home()
