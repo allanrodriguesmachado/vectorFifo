@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,8 @@ Route::prefix('/')->name('admin.')->group(function () {
 
     Route::group(['middleware' => ['auth']], function () {
         Route::get('home', [AuthController::class, 'home'])->name('home');
+        Route::get('users/team',[UserController::class, 'team'])->name('users.team');
+        Route::resource('users',UserController::class);
     });
 
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');

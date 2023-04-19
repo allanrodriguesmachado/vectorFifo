@@ -142,5 +142,5 @@
 @endsection
 
 @section('js')
-    <script>alert("TESTE")</script>
+{{--    <script>alert("TESTE")</script>--}}
 @endsection
