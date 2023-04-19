@@ -20,7 +20,11 @@
         </div>
     </header>
 
+<<<<<<< HEAD
     @include('admin.users.filter')
+=======
+    <?php include('filter.blade.php'); ?>
+>>>>>>> 0c94ee9bbab601450036e8b95546afdef1d1a368
 
     <div class="dash_content_app_box">
         <div class="dash_content_app_box_stage">
@@ -47,4 +51,7 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 @endsection()
+=======
+>>>>>>> 0c94ee9bbab601450036e8b95546afdef1d1a368
