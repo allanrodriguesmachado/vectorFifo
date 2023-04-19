@@ -42,10 +42,13 @@
             </form>
 
             <footer>
-                {{--                <p>Desenvolvido por <a href="#"><b>Allan</b>.</a>R</p>--}}
-                <p class="text-bold">Desenvolvido por <a href="#">Allan<b class="text-green">.</b></a>R</p>
+                <p class="text-bold">Desenvolvido por
+                    <a href="#">Allan<b class="text-green">.</b></a>R
+                </p>
+
                 <p class="text-bold">&copy; <?= date("Y"); ?> - Todos os Direitos Reservados</p>
             </footer>
+
         </article>
     </div>
 
