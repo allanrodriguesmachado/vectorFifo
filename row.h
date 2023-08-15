@@ -1,6 +1,4 @@
-#include <iostream>
-
-typedef int TypeItems
+typedef int TypeItems;
 const int maxItems = 100;
 
 using namespace std;
